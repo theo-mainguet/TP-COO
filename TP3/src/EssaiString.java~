@@ -1,0 +1,10 @@
+public class EssaiString {
+
+    public static void main (String [] args){
+	String parametres = "";
+	for (int i = 0; i < args.length; i++){
+	    res = res + ";" + args[i];
+	}
+	System.out.println(parametres);
+    }
+}

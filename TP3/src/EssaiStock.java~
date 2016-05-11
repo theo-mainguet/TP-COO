@@ -1,0 +1,7 @@
+public class EssaiStock {
+    
+    public static void main (String [] args){
+	Stock s = new Stock (20);
+	s.ajoutArticle(new ArticlesEnStock("PC", "xdf10"));
+    }
+}

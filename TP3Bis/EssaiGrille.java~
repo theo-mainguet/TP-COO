@@ -1,0 +1,12 @@
+public class EssaiGrille {
+
+    public static void main (String [] args){
+	Grille tab = new Grille (3,5);
+	for (int i = 0; i < tab.length; i++){
+	    for (int j = 0; j < tan[i].length; j++){
+		tab[i][j] = remplir (0, 100);
+		tab[i][j].afficher();
+	    }
+	}
+    }
+}

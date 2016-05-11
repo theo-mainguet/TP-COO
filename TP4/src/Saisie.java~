@@ -1,0 +1,8 @@
+import javax.swing;
+
+public class Saisie{
+    
+    public static void main (String [] args){
+	showInputDialog(null,"Entrez un entier :");
+    }
+}

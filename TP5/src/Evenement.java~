@@ -1,0 +1,25 @@
+import java.util.GregorianCalendar;
+public class Evenement{
+    
+    String intitule;
+    String lieu;
+    GregorianCalendar debut;
+    GregorianCalendar fin;
+
+    Evenement (){}
+    Evenement (String i, String l, GregorianCalendar d, GregorianCalendar f){
+	this.intitule = i;
+	this.lieu = l;
+	if (f.compareTo(d) > 0){
+	    this.debut = d;
+	    this.fin = f;
+	}else{
+	    this.debut = d;
+	    this.fin = d;
+	}
+    }
+
+    String toString(){
+	
+    }
+}

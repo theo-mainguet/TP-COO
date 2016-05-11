@@ -1,0 +1,11 @@
+public class Bingo {
+
+    int nbJ = 3;
+    
+    Bingo(String nom){
+	Joueur nom = new Joueur (nom);
+	nom.Grille(3,5);
+    }
+}
+
+    

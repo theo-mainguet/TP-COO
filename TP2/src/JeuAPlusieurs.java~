@@ -1,0 +1,24 @@
+/**
+ * La classe JeuToutSeul modélise le scénario où "César" joue tout seul au "Jeu de dés"
+ */
+
+public class JeuAPlusieurs {
+
+    public static void main(String[] args) {
+	Saisie s = new Saisie ();
+	int nbJoueurs = s.saisieEntier("Entrez un nombre de joueur :");
+	Joueur [] joueurs = new Joueur [nbJoueurs];
+	int total = s.saisieEntier("Entrez le total à atteindre :");
+	for (int j = 0; j < joueurs.length; j++){
+	    joueurs[j]=new Joueur("Joueur" + j);
+	}
+	int i = 0;
+	while (joueurs[i].cumul < total){
+	    joueurs[i].jouer();
+	    i = i + 1;
+	    if (i == nbJoueurs){
+		i = 0;
+	    }
+	}
+    }
+}

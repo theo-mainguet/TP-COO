@@ -1,0 +1,27 @@
+/**
+ * La classe JeuToutSeul modélise le scénario où "César" joue tout seul au "Jeu de dés"
+ */
+public class JeuADeux {
+    public static void main(String[] args) {
+	//Initialisation du total à atteindre
+	int total=20;
+	//Création d'un Joueur appelé César
+	Joueur cesar=new Joueur("César");
+	Joueur theo = new Joueur("Théo");
+	//On fait jouer César jusqu'à ce que il ait atteint le total demandé
+	boolean joueurCourant = true;
+	while(cesar.cumul<total || theo.cumul < total) {
+	    if (joueurCourant){
+		cesar.jouer();
+	    }else{
+		theo.jouer();
+	    }
+	    joueurCourant = !joueurCourant;
+	}
+	if (theo.bat(cesar)){
+	    System.out.println("Théo a gagné avec un score de " + theo.nbLancers + " contre un score de " + cesar.nbLancers + " pour César.");
+	}else{
+	    System.out.println("César a gagné avec un score de " + cesar.nbLancers + " contre un score de " + theo.nbLancers + " pour Théo.");
+	}
+    }
+}

@@ -1,0 +1,10 @@
+import java.util.Random;
+public class EssaiTelephone3 {
+
+    public static void main (String[] args){
+	for (int i = 0; i < args.length; i++){
+	    Telephone t = new Telephone (rd.nextInt(9) + 1, rd.nextInt(100), rd.nextInt(100), rd.nextInt(100), rd.nextInt(100), rd.nextInt(100));
+	    System.out.println(t.toString());
+	}
+    }
+}
