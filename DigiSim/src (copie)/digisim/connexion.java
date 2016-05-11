@@ -13,7 +13,7 @@ public class connexion implements Entree, Sortie {
 		if (this.from == null){
 			return false;
 		}else{
-			return true;
+			return from.valeur();
 		}
 	}
 
